@@ -179,7 +179,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
-  more.setAttribute('aria-label', `View resturant details for ${resta urant.name}`);
+  more.setAttribute('aria-label', `View resturant details for ${restaurant.name}`);
   li.append(more)
 
   return li
@@ -210,3 +210,16 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
+
+
+/**
+ * Add the service worker
+ */
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('js/service_worker.js')
+  .then(function(reg) {
+    console.log(`Registration successful`);
+  }).catch(function(error) {
+    console.log(`Registration failed with ${error}`);
+  });
+};
