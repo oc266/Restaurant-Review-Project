@@ -4,7 +4,7 @@ This project is part of Udacity's Front End Nanodegree Scholarship.
 Given a static webpage, the task was to convert it to a mobile ready web app by:
 * Making the page responsive (done using flexbox and media queries)
 * Addressing accessibility of the page
-* Adding a service worker to cache the page so it is avaiable offline
+* Adding a service worker to cache the page so it is available offline
 
 ## Installing from source
 
